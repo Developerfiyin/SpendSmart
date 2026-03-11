@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
-export default function RootLayout() {
+export default function TabsLayout() {
   return (
-     <Tabs
+    <Tabs
       screenOptions={{
         tabBarInactiveTintColor: "gray",
         tabBarStyle: {
@@ -11,6 +11,21 @@ export default function RootLayout() {
           paddingTop: 15,
         },
       }}
-    ></Tabs>
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ color, focused }) => {
+            return focused ? (
+              <Feather name="home" size={30} color="darkgrey" />
+            ) : (
+              <AntDesign name="home" size={30} color="black" />
+            );
+          },
+          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
+        }}
+      />
+    </Tabs>
   );
 }
