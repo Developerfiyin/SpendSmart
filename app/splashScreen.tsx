@@ -17,7 +17,9 @@ export default function Splash() {
         <Image
         source={require('../assets/images/splashimage.png')}
        />
-      <Text style={{fontSize: 29,color: "#ffffff", fontWeight: 400 }}>SpendSmart </Text>
+      <Text 
+      style={{fontSize: 29, color:"#ffffff", fontWeight: 400,  }}>SpendSmart </Text>
+      <Text style={{fontSize: 19, color: "#ffffff", fontWeight: 400}}>TRACK YOUR EXPENSES </Text>
     </View>
   )};
 
@@ -27,6 +29,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     alignItems: "center",
     display: "flex",
+    columnGap: 8,
     flexDirection: "column",
     justifyContent: "center",
     backgroundColor: "#04091E",
