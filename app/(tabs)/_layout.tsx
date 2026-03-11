@@ -1,3 +1,8 @@
+import AntDesign from "@expo/vector-icons/AntDesign";
+import Entypo from "@expo/vector-icons/Entypo";
+import EvilIcons from "@expo/vector-icons/EvilIcons";
+import Feather from "@expo/vector-icons/Feather";
+
 import { Tabs } from "expo-router";
 export default function TabsLayout() {
   return (
