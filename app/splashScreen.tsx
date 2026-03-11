@@ -8,12 +8,27 @@ export default function Splash() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.replace("/home");
-    }, 6000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
   return(
-    <View>
-
+    <View style={styles.view}>
+        <Image
+        source={require('../assets/images/splashimage.png')}
+       />
+      <Text style={{fontSize: 29,color: "#ffffff", fontWeight: 400 }}>SpendSmart </Text>
     </View>
   )};
+
+const styles = StyleSheet.create({
+  view: {
+    flex: 1,
+    textAlign: 'center',
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    backgroundColor: "#04091E",
+  }, 
+})
