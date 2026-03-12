@@ -1,6 +1,20 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Linking } from "react-native";
 
 const SignUp = () => {
+
+
+  const google = () => {
+    Linking.openURL("https://accounts.google.com/");
+  };
+
+  const appleLogin = () => {
+    Linking.openURL("https://appleid.apple.com/");
+  };
+
+  const facebookLogin = () => {
+    Linking.openURL("https://www.facebook.com/login/");
+  };
   return (
     <View style={style.view}>
       <Image
@@ -23,6 +37,7 @@ const SignUp = () => {
       </Text>
 
       <Pressable
+      onPress={google}
         style={{
           display: "flex",
           flexDirection: "row",
@@ -58,6 +73,7 @@ const SignUp = () => {
       </Pressable>
 
       <Pressable
+      onPress={appleLogin}
         style={{
           display: "flex",
           flexDirection: "row",
@@ -93,6 +109,7 @@ const SignUp = () => {
       </Pressable>
 
       <Pressable
+      onPress={facebookLogin}
         style={{
           display: "flex",
           flexDirection: "row",
