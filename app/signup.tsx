@@ -1,29 +1,67 @@
 import React from "react";
-import { View , Image, StyleSheet} from "react-native";
+import { Image, StyleSheet, Text, TextInput, View } from "react-native";
 
 const signup = () => {
   return (
-    <View style={ styles.view}>
+    <View style={styles.view}>
       <Image
         source={require("@/assets/images/splashimage.png")}
         style={styles.imgs}
       />
+      <Text style={styles.text}>Create an account </Text>
+
+      <View style={styles.container}>
+        <TextInput
+          placeholder="Email"
+          placeholderTextColor="#A2A2A2"
+          keyboardType="email-address"
+          style={styles.input}
+        />
+
+        <TextInput
+          placeholder="Password"
+          placeholderTextColor="#A2A2A2"
+          secureTextEntry={true}
+          style={styles.input}
+        />
+      </View>
+      
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-    view: {
+  view: {
     flexDirection: "column",
     gap: 2,
     backgroundColor: "#04091E",
     height: "100%",
-  }, 
+  },
   imgs: {
     width: 59,
     height: 56.3,
     marginHorizontal: "auto",
     marginTop: 177,
   },
-})
+  text: {
+    color: "#fff",
+    fontSize: 30,
+    textAlign: "left",
+    marginLeft: 20,
+    marginTop: 9,
+    fontWeight: "semibold",
+  },
+  container: {
+    padding: 20,
+  },
+
+  input: {
+    borderWidth: 1,
+    borderColor: "#A2A2A2",
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 15,
+    color: "#ffff",
+  },
+});
 export default signup;
