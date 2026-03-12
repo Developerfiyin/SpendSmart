@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet, Text, TextInput, View } from "react-native";
+import { Image, StyleSheet, Text, TextInput, View, Pressable } from "react-native";
 
 const signup = () => {
   return (
@@ -24,8 +24,23 @@ const signup = () => {
           secureTextEntry={true}
           style={styles.input}
         />
+
+
+        <Pressable style={{borderRadius: 90, backgroundColor: "#2144D1",   }}>
+  
+          <Text style={{ 
+             fontWeight: "semibold",
+             color: "#fff",
+             fontSize: 18,
+             borderWidth: 1,
+             borderColor: "#4B4B4B",
+             textAlign: "center",
+          }}> Sign up with Email</Text>
+
+
+        </Pressable>
       </View>
-      
+
     </View>
   );
 };
