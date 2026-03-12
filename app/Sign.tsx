@@ -32,15 +32,19 @@ const SignUp = () => {
           borderColor: "#4B4B4B",
           width: 357,
           height: 50,
+          marginBottom: 15,
           marginHorizontal: "auto",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Image
-          source={require("@/assets/images/goggle.png")}
-          style={{ width: 24, height: 24 }}
-        />
+        <View style={{ width: 24, height: 24 }}>
+          <Image
+            source={require("@/assets/images/goggle.png")}
+            style={{ width: 20, height: 20.66 }}
+          />
+        </View>
+
         <Text
           style={{
             fontSize: 18,
@@ -49,7 +53,6 @@ const SignUp = () => {
             color: "#ffff",
           }}
         >
-          {" "}
           Continue with Google
         </Text>
       </Pressable>
@@ -65,11 +68,13 @@ const SignUp = () => {
           width: 357,
           height: 50,
           marginHorizontal: "auto",
+          marginBottom: 15,
+
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <View style={{width: 24, height: 24}}>
+        <View style={{ width: 24, height: 24, marginRight: 10 }}>
           <Image
             source={require("@/assets/images/apple.png")}
             style={{ width: 15.7, height: 18 }}
@@ -83,7 +88,6 @@ const SignUp = () => {
             color: "#ffff",
           }}
         >
-          {" "}
           Continue with Apple
         </Text>
       </Pressable>
@@ -99,14 +103,19 @@ const SignUp = () => {
           width: 357,
           height: 50,
           marginHorizontal: "auto",
+          marginBottom: 15,
+
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Image
-          source={require("@/assets/images/facebook.png")}
-          style={{ width: 24, height: 24 }}
-        />
+        <View style={{ width: 24, height: 24 }}>
+          <Image
+            source={require("@/assets/images/facebook.png")}
+            style={{ width: 20.87, height: 21 }}
+          />
+        </View>
+
         <Text
           style={{
             fontSize: 18,
@@ -115,7 +124,6 @@ const SignUp = () => {
             color: "#ffff",
           }}
         >
-          {" "}
           Continue with facebook
         </Text>
       </Pressable>
