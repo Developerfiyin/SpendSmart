@@ -1,6 +1,6 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { Linking } from "react-native";
-
+import { router } from "expo-router";
 const SignUp = () => {
 
 
@@ -150,6 +150,23 @@ const SignUp = () => {
       <Text style={style.text}>OR</Text>
       <View style={style.line} />
     </View>
+
+
+     <Pressable style={style.circle} 
+          onPress={() => router.push("/Sign")}
+          >
+            <Text
+              style={{
+                color: "#ffffff",
+                fontSize: 18,
+                fontWeight: 500,
+                textAlign: "center", }}
+            > Get Started
+            </Text>
+          </Pressable>
+
+
+          <Text style={{color: "#ffff",  }}> Dont have an account? <span> <a href="#">Sign up</a></span></Text>
     </View>
   );
 };
@@ -182,6 +199,14 @@ const style = StyleSheet.create({
     marginHorizontal: 10,
     fontSize: 14,
     color: "#fff",
+  },
+
+  circle: {
+    backgroundColor: "#2144D1",
+    paddingVertical: 15,
+    textAlign: "center",
+    paddingHorizontal: 80,
+    borderRadius: 90,
   },
 
 
