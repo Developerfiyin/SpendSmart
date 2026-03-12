@@ -1,15 +1,14 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View , Pressable} from "react-native";
 const home = () => {
   return (
     <View style={styles.view}>
       <Image source={require("@/assets/images/image 1.png")} />
-      <Text style={{ fontSize: 30, color: "#ffffff", fontWeight: 500 }}>
-        {" "}
+      <Text style={{ fontSize: 30,  color: "#ffffff", fontWeight: 500, marginHorizontal: "auto" }}>
         Track your expenses with SmartSpend
       </Text>
 
-      <View>
+      <View style={{flexDirection: "row",  gap: 6 }}>
         <View
           style={{
             backgroundColor: "#C5C6CF",
@@ -18,16 +17,25 @@ const home = () => {
             borderRadius: 100,
           }}
         ></View>
-        <View 
-        style={{ 
-               width: 6,
+        <View
+          style={{
+            width: 6,
             height: 6,
-            borderRadius: 100,  
-            backgroundColor: "#4C4F5E"
-
-        }} ></View>
-        <View></View>
+            borderRadius: 100,
+            backgroundColor: "#4C4F5E",
+          }}
+        ></View>
+        <View
+          style={{
+            backgroundColor: "#898B958A",
+            width: 6,
+            height: 6,
+            borderRadius: 100,
+          }}
+        ></View>
       </View>
+
+
     </View>
   );
 };
