@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
 const get = () => {
   return (
     <View style={styles.view}>
@@ -38,7 +39,9 @@ const get = () => {
         ></View>
       </View>
 
-      <Pressable style={styles.circle}>
+      <Pressable style={styles.circle} 
+      onPress={() => router.push("/Sign")}
+      >
         <Text
           style={{
             color: "#ffffff",
