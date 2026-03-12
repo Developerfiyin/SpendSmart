@@ -36,10 +36,16 @@ const signup = () => {
              borderColor: "#4B4B4B",
              textAlign: "center",
           }}> Sign up with Email</Text>
-
-
         </Pressable>
+
+
       </View>
+
+    <View style={styles.container}>
+      <View style={styles.line} />
+      <Text style={styles.text}>OR</Text>
+      <View style={styles.line} />
+    </View>
 
     </View>
   );
@@ -77,6 +83,21 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginBottom: 15,
     color: "#ffff",
+  },
+  containers: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 20,
+  },
+  texts: {
+    fontSize: 14,
+    color: "#555",
+  },
+  link: {
+    fontSize: 14,
+    color: "#007BFF",
+    marginLeft: 5,
+    fontWeight: "bold",
   },
 });
 export default signup;
