@@ -4,13 +4,14 @@ const home = () => {
   return (
     <View style={styles.view}>
       <Image source={require("@/assets/images/image 1.png")} />
-      <Text style={{ fontSize: 30, marginBottom: -10, color: "#ffffff", fontWeight: 500 }}>
+      <Text style={{fontSize: 30, marginBottom: -10, marginTop: 39,  color: "#ffffff", fontWeight: 500,  }}>
         Track your expenses with
       </Text>
-      <Text style={{ fontSize: 30, color: "#ffffff", fontWeight: 500 }}>
+      
+      <Text style={{fontSize: 30, color: "#ffffff", fontWeight: 500 }}>
         SmartSpend
       </Text>
-      <View style={{ flexDirection: "row", gap: 6 }}>
+      <View style={{flexDirection: "row", gap: 6 , marginTop: 40, }}>
         <View
           style={{
             backgroundColor: "#C5C6CF",
@@ -43,11 +44,8 @@ const home = () => {
             color: "#ffffff",
             fontSize: 18,
             fontWeight: 500,
-            textAlign: "center",
-          }}
-        >
-          {" "}
-          Next
+            textAlign: "center", }}
+        > Next
         </Text>
       </Pressable>
     </View>
@@ -66,10 +64,10 @@ const styles = StyleSheet.create({
   },
   circle: {
     backgroundColor: "#2144D1",
-
     paddingVertical: 15,
-    paddingHorizontal: 100,
-
+    textAlign: "center",
+    marginTop: 67,
+    paddingHorizontal: 130,
     borderRadius: 90,
   },
 });
