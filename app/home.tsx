@@ -1,14 +1,16 @@
 import React from "react";
-import { Image, StyleSheet, Text, View , Pressable} from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 const home = () => {
   return (
     <View style={styles.view}>
       <Image source={require("@/assets/images/image 1.png")} />
-      <Text style={{ fontSize: 30,  color: "#ffffff", fontWeight: 500, marginHorizontal: "auto" }}>
-        Track your expenses with SmartSpend
+      <Text style={{ fontSize: 30, marginBottom: -10, color: "#ffffff", fontWeight: 500 }}>
+        Track your expenses with
       </Text>
-
-      <View style={{flexDirection: "row",  gap: 6 }}>
+      <Text style={{ fontSize: 30, color: "#ffffff", fontWeight: 500 }}>
+        SmartSpend
+      </Text>
+      <View style={{ flexDirection: "row", gap: 6 }}>
         <View
           style={{
             backgroundColor: "#C5C6CF",
@@ -35,7 +37,19 @@ const home = () => {
         ></View>
       </View>
 
-
+      <Pressable style={styles.circle}>
+        <Text
+          style={{
+            color: "#ffffff",
+            fontSize: 18,
+            fontWeight: 500,
+            textAlign: "center",
+          }}
+        >
+          {" "}
+          Next
+        </Text>
+      </Pressable>
     </View>
   );
 };
@@ -46,10 +60,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#04091E",
     display: "flex",
+    gap: 10,
     alignItems: "center",
     textAlign: "center",
   },
-  circle: {},
+  circle: {
+    backgroundColor: "#2144D1",
+
+    paddingVertical: 15,
+    paddingHorizontal: 100,
+
+    borderRadius: 90,
+  },
 });
 
 export default home;
