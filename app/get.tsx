@@ -45,7 +45,7 @@ const get = () => {
             fontSize: 18,
             fontWeight: 500,
             textAlign: "center", }}
-        > Next
+        > Get Started
         </Text>
       </Pressable>
     </View>
