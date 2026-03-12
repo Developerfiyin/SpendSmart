@@ -144,6 +144,12 @@ const SignUp = () => {
           Continue with facebook
         </Text>
       </Pressable>
+
+    <View style={style.container}>
+      <View style={style.line} />
+      <Text style={style.text}>OR</Text>
+      <View style={style.line} />
+    </View>
     </View>
   );
 };
@@ -161,6 +167,25 @@ const style = StyleSheet.create({
     marginHorizontal: "auto",
     marginTop: 177,
   },
+
+  container: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 20,
+  },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: "#ccc",
+  },
+  text: {
+    marginHorizontal: 10,
+    fontSize: 14,
+    color: "#fff",
+  },
+
+
+  
 });
 
 export default SignUp;
