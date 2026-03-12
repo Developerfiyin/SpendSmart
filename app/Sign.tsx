@@ -1,4 +1,4 @@
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Linking } from "react-native";
 import { router } from "expo-router";
 const SignUp = () => {
@@ -153,7 +153,7 @@ const SignUp = () => {
 
 
      <Pressable style={style.circle} 
-          onPress={() => router.push("/Sign")}
+          onPress={() => router.push('/(tabs)')}
           >
             <Text
               style={{
@@ -165,8 +165,13 @@ const SignUp = () => {
             </Text>
           </Pressable>
 
+ <View style={style.containers}>
+      <Text style={style.texts}>Don't have an account?</Text>
 
-          <Text style={{color: "#ffff",  }}> Dont have an account? <span> <a href="#">Sign up</a></span></Text>
+      <TouchableOpacity onPress={() => router.push("/signup")}>
+        <Text style={style.link}>Sign up</Text>
+      </TouchableOpacity>
+    </View>
     </View>
   );
 };
@@ -209,7 +214,21 @@ const style = StyleSheet.create({
     borderRadius: 90,
   },
 
-
+containers: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 20,
+  },
+  texts: {
+    fontSize: 14,
+    color: "#555",
+  },
+  link: {
+    fontSize: 14,
+    color: "#007BFF",
+    marginLeft: 5,
+    fontWeight: "bold",
+  },
   
 });
 
