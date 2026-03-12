@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View, Pressable } from "react-native";
 
 const SignUp = () => {
   return (
@@ -10,16 +10,23 @@ const SignUp = () => {
 
       <Text
         style={{
-          fontSize: 20,
+          fontSize: 40,
           fontWeight: "semibold",
           textAlign: "center",
           color: "#ffff",
-          
+         letterSpacing: 0,
+     verticalAlign: "middle",
+        marginVertical: 50,
+    
         }}
       >
-        {" "}
         Let’s get you in
       </Text>
+
+         <Pressable style={{ display: "flex", flexDirection: "row", gap: 5 , borderRadius: 90,  backgroundColor: "#4B4B4B",  }}> 
+              <Image source={require("@/assets/images/goggle.png")} style={{width: 24, height: 24, }} />
+              <Text> Continue with Google</Text>
+            </Pressable> 
     </View>
   );
 };
@@ -30,12 +37,13 @@ const style = StyleSheet.create({
     gap: 2,
     backgroundColor: "#04091E",
     height: "100%",
+
   },
   imgs: {
     width: 59,
     height: 56.3,
     marginHorizontal: "auto",
-    marginVertical: 177,
+    marginTop: 177,
 
   },
 });
