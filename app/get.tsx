@@ -13,14 +13,7 @@ const get = () => {
         SmartSpend
       </Text>
       <View style={{flexDirection: "row", gap: 6 , marginTop: 40, }}>
-        <View
-          style={{
-            backgroundColor: "#C5C6CF",
-            width: 6,
-            height: 6,
-            borderRadius: 100,
-          }}
-        ></View>
+        
         <View
           style={{
             width: 6,
@@ -32,6 +25,15 @@ const get = () => {
         <View
           style={{
             backgroundColor: "#898B958A",
+            width: 6,
+            height: 6,
+            borderRadius: 100,
+          }}
+        ></View>
+
+        <View
+          style={{
+            backgroundColor: "#C5C6CF",
             width: 6,
             height: 6,
             borderRadius: 100,
