@@ -6,11 +6,11 @@ export default function Index() {
       style={{
         backgroundColor: "#04091E",
         height: "100%",
-        
+
+
       }}
     >
-      <Text style={{ textAlign: "left", fontSize: 15, fontWeight: 200 }}>
-        {" "}
+      <Text style={{ textAlign: "left", color: "#fff", fontSize: 20, fontWeight: 400, marginHorizontal: 19 }}>
         Welcome,
       </Text>
       <View
@@ -21,14 +21,12 @@ export default function Index() {
           gap: 8,
         }}
       >
-        <Text style={{ fontSize: 18, fontWeight: "black", textAlign: "left" }}>
-          {" "}
-          ARMY JONES
+        <Text style={{ fontSize: 30, fontWeight: "black", color: "#fff", textAlign: "left", marginHorizontal: 10 }}>
+          AMY JONES
         </Text>
         {/* THE ICONS*/}
         <Pressable style={{ flexDirection: "row", gap: 5 }}>
           <Image source={require("@/assets/images/searchIcon.png")} />
-
           <Image source={require("@/assets/images/bellIcon.png")} />
         </Pressable>
       </View>
