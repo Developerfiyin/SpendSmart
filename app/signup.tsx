@@ -1,5 +1,12 @@
 import React from "react";
-import { Image, StyleSheet, Text, TextInput, View, Pressable } from "react-native";
+import {
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 
 const signup = () => {
   return (
@@ -12,41 +19,58 @@ const signup = () => {
 
       <View style={styles.container}>
         <TextInput
-          placeholder="Email"
+          placeholder="Email:"
           placeholderTextColor="#A2A2A2"
           keyboardType="email-address"
           style={styles.input}
         />
 
         <TextInput
-          placeholder="Password"
+          placeholder="Password:"
           placeholderTextColor="#A2A2A2"
           secureTextEntry={true}
           style={styles.input}
         />
 
-
-        <Pressable style={{borderRadius: 90, backgroundColor: "#2144D1",   }}>
-  
-          <Text style={{ 
-             fontWeight: "semibold",
-             color: "#fff",
-             fontSize: 18,
-             borderWidth: 1,
-             borderColor: "#4B4B4B",
-             textAlign: "center",
-          }}> Sign up with Email</Text>
+        <Pressable
+          style={{
+            borderRadius: 90,
+            paddingHorizontal: 13,
+            width: 357,
+            height: 50,
+            alignItems: "center",
+            backgroundColor: "#2144D1",
+          }}
+        >
+          <Text
+            style={{
+              fontWeight: "semibold",
+              color: "#fff",
+              fontSize: 18,
+              marginVertical: "auto",
+              textAlign: "center",
+            }}
+          >
+            {" "}
+            Sign up with Email
+          </Text>
         </Pressable>
-
-
       </View>
 
-    <View style={styles.container}>
-      <View style={styles.line} />
-      <Text style={styles.text}>OR</Text>
-      <View style={styles.line} />
-    </View>
+      <View style={styles.containers}>
+        <View style={styles.line} />
+        <Text style={styles.texts}>OR</Text>
+        <View style={styles.line} />
+      </View>
 
+      <View style={{ flexDirection: "row", gap: 9 }}>
+        <View style={styles.viewss}>
+          <Image source={require('@/assets/images/apple.png')} 
+          
+          style={styles.image}
+          />
+        </View>
+      </View>
     </View>
   );
 };
@@ -86,18 +110,30 @@ const styles = StyleSheet.create({
   },
   containers: {
     flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 20,
+    alignItems: "center",
+    marginVertical: 20,
+  },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: "#ccc",
   },
   texts: {
+    marginHorizontal: 10,
     fontSize: 14,
-    color: "#555",
+    color: "#fff",
   },
-  link: {
-    fontSize: 14,
-    color: "#007BFF",
-    marginLeft: 5,
-    fontWeight: "bold",
+  viewss: {
+    width: 85,
+    height: 67,
+    left: 52,
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: "#4B4B4B",
   },
+  image : {
+    marginHorizontal: "auto",
+    marginVertical: "auto",
+  }
 });
 export default signup;
