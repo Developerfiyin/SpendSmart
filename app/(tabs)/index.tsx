@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { Text, View, Pressable, } from "react-native";
+
 
 export default function Index() {
   return (
@@ -9,7 +10,17 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Hi and welcome back to my channel.</Text>
+
+      <Text> Welcome</Text>
+      <View>
+        <Text> ARMY JONES</Text>
+        {/* THE ICONS*/}
+
+        <View>
+       
+
+        </View>
+      </View>
     </View>
   );
 }
