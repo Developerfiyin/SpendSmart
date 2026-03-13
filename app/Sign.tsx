@@ -28,7 +28,7 @@ const SignUp = () => {
           fontWeight: "semibold",
           textAlign: "center",
           color: "#ffff",
-          letterSpacing: 0,
+          letterSpacing: 3,
           verticalAlign: "middle",
           marginVertical: 50,
         }}
@@ -85,7 +85,6 @@ const SignUp = () => {
           height: 50,
           marginHorizontal: "auto",
           marginBottom: 15,
-
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -103,8 +102,7 @@ const SignUp = () => {
             textAlign: "center",
             color: "#ffff",
           }}
-        >
-          Continue with Apple
+        >Continue with Apple
         </Text>
       </Pressable>
 
@@ -121,7 +119,6 @@ const SignUp = () => {
           height: 50,
           marginHorizontal: "auto",
           marginBottom: 15,
-
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -140,8 +137,7 @@ const SignUp = () => {
             textAlign: "center",
             color: "#ffff",
           }}
-        >
-          Continue with facebook
+        >Continue with facebook
         </Text>
       </Pressable>
 
@@ -160,14 +156,13 @@ const SignUp = () => {
                 color: "#ffffff",
                 fontSize: 18,
                 fontWeight: 500,
-                textAlign: "center", }}
+                textAlign: "center",}}
             > Get Started
             </Text>
           </Pressable>
 
  <View style={style.containers}>
       <Text style={style.texts}>Don't have an account?</Text>
-
       <TouchableOpacity onPress={() => router.push("/signup")}>
         <Text style={style.link}>Sign up</Text>
       </TouchableOpacity>
@@ -177,9 +172,9 @@ const SignUp = () => {
 };
 
 const style = StyleSheet.create({
-  view: {
+  view:{
     flexDirection: "column",
-    gap: 2,
+    gap: 6,
     backgroundColor: "#04091E",
     height: "100%",
   },
@@ -205,12 +200,10 @@ const style = StyleSheet.create({
     fontSize: 14,
     color: "#fff",
   },
-
   circle: {
     backgroundColor: "#2144D1",
     paddingVertical: 11,
-    textAlign: "center",
-    
+    textAlign: "center", 
     borderRadius: 90,
   },
 

@@ -8,7 +8,7 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarInactiveTintColor: "gray",
+        tabBarInactiveTintColor: "#ccc",
         tabBarStyle: {
           backgroundColor: "white",
           height: 110,
@@ -23,12 +23,12 @@ export default function TabsLayout() {
           title: "Home",
           tabBarIcon: ({ color, focused }) => {
             return focused ? (
-              <Feather name="home" size={30} color="darkgrey" />
+              <Feather name="home" size={30} color="#04091E" />
             ) : (
-              <AntDesign name="home" size={30} color="black" />
+              <AntDesign name="home" size={30} color="#2144D1" />
             );
           },
-          tabBarLabelStyle: { fontSize: 15, color: "grey", paddingTop: 9 },
+          tabBarLabelStyle: { fontSize: 15, color: "#ccc", paddingTop: 9 },
         }}
       />
     </Tabs>
