@@ -208,9 +208,9 @@ const style = StyleSheet.create({
 
   circle: {
     backgroundColor: "#2144D1",
-    paddingVertical: 15,
+    paddingVertical: 11,
     textAlign: "center",
-    paddingHorizontal: 80,
+    
     borderRadius: 90,
   },
 

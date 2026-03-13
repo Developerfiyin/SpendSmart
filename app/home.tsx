@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     textAlign: "center",
     marginTop: 67,
-    paddingHorizontal: 130,
+    paddingHorizontal: "38%",
     borderRadius: 90,
   },
 });
