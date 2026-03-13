@@ -54,7 +54,6 @@ const signup = () => {
               textAlign: "center",
             }}
           >
-            {" "}
             Sign up
           </Text>
         </Pressable>
@@ -114,7 +113,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#fff",
-    fontSize: 30,
+    fontSize: 34,
     textAlign: "left",
     marginLeft: 20,
     marginTop: 9,

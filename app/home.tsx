@@ -9,7 +9,7 @@ const home = () => {
         Track your expenses with
       </Text>
       
-      <Text style={{fontSize: 30, color: "#ffffff", fontWeight: 500 }}>
+      <Text style={{fontSize: 30, color: "#ffffff", marginTop: 12, fontWeight: 500 }}>
         SmartSpend
       </Text>
       <View style={{flexDirection: "row", gap: 6 , marginTop: 40, }}>
