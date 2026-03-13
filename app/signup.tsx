@@ -5,9 +5,11 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  TouchableOpacity,
   View,
 } from "react-native";
 
+import { router } from "expo-router";
 const signup = () => {
   return (
     <View style={styles.view}>
@@ -33,11 +35,12 @@ const signup = () => {
         />
 
         <Pressable
+          onPress={() => router.push("/(tabs)")}
           style={{
             borderRadius: 90,
             paddingHorizontal: 13,
             width: 357,
-            height: 50,
+            height: 55,
             alignItems: "center",
             backgroundColor: "#2144D1",
           }}
@@ -52,7 +55,7 @@ const signup = () => {
             }}
           >
             {" "}
-            Sign up with Email
+            Sign up
           </Text>
         </Pressable>
       </View>
@@ -63,13 +66,34 @@ const signup = () => {
         <View style={styles.line} />
       </View>
 
-      <View style={{ flexDirection: "row", gap: 9 }}>
+      <View style={{ flexDirection: "row", gap: 25 }}>
         <View style={styles.viewss}>
-          <Image source={require('@/assets/images/apple.png')} 
-          
-          style={styles.image}
+          <Image
+            source={require("@/assets/images/apple.png")}
+            style={styles.image}
           />
         </View>
+
+        <View style={styles.viewss}>
+          <Image
+            source={require("@/assets/images/goggle.png")}
+            style={styles.image}
+          />
+        </View>
+
+        <View style={styles.viewss}>
+          <Image
+            source={require("@/assets/images/facebook.png")}
+            style={styles.image}
+          />
+        </View>
+      </View>
+
+      <View style={styles.contaiers}>
+        <Text style={styles.txts}>Already have an account?</Text>
+        <TouchableOpacity onPress={() => router.push("/Sign")}>
+          <Text style={styles.link}>Log in </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -105,7 +129,7 @@ const styles = StyleSheet.create({
     borderColor: "#A2A2A2",
     padding: 12,
     borderRadius: 8,
-    marginBottom: 15,
+    marginBottom: 20,
     color: "#ffff",
   },
   containers: {
@@ -131,9 +155,24 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: "#4B4B4B",
   },
-  image : {
+  image: {
     marginHorizontal: "auto",
     marginVertical: "auto",
-  }
+  },
+  contaiers: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 20,
+  },
+  txts: {
+    fontSize: 14,
+    color: "#555",
+  },
+  link: {
+    fontSize: 14,
+    color: "#007BFF",
+    marginLeft: 5,
+    fontWeight: "bold",
+  },
 });
 export default signup;
