@@ -25,6 +25,7 @@ export default function Index() {
         {/* THE ICONS*/}
         <Pressable style={{ flexDirection: "row", gap: 9, right: 12 }}>
           <Image source={require("@/assets/images/searchIcon.png")} />
+          
           <Image source={require("@/assets/images/bellIcon.png")} />
         </Pressable>
       </View>
