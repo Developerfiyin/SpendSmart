@@ -19,13 +19,13 @@ export default function Index() {
           gap: 8,
         }}
       >
-        <Text style={{ fontSize: 30, fontWeight: "black", color: "#fff", textAlign: "left", marginHorizontal: 10 }}>
+        <Text style={{fontSize: 30, fontWeight: "black", color: "#fff", textAlign: "left", marginHorizontal: 10 }}>
           AMY JONES
         </Text>
         {/* THE ICONS*/}
         <Pressable style={{ flexDirection: "row", gap: 9, right: 12 }}>
           <Image source={require("@/assets/images/searchIcon.png")} />
-          
+
           <Image source={require("@/assets/images/bellIcon.png")} />
         </Pressable>
       </View>
